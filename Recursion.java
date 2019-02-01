@@ -23,7 +23,7 @@ public class Recursion {
   *precondition: n is non-negative
   */
   public static int fib(int n){
-
+    return fibH(n, 0, 1);
   }
 
   //Fibbonaci helper
