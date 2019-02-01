@@ -39,9 +39,11 @@ public class Recursion {
     }
   }
 
-  //public static ArrayList<Integer> makeAllSums(int n) {
-
-  //}
+  public static ArrayList<Integer> makeAllSums(int n) {
+    ArrayList<Integer> sums = new ArrayList<Integer>();
+    allSumsH(n, 0, sums);
+    return sums;
+  }
 
   public static void allSumsH(int n, int ans, ArrayList<Integer> list) {
     if (n == 0) {
