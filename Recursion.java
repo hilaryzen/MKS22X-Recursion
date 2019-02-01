@@ -28,7 +28,9 @@ public class Recursion {
 
   //Fibbonaci helper
   public static int fibH(int n, int first, int second) {
-    if (n = 0) {
+    if (n == 1) {
+      return first;
+    } else if (n == 2) {
       return second;
     }
   }
