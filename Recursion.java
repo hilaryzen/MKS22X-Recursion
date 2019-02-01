@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Recursion {
 
   /*
@@ -37,13 +39,16 @@ public class Recursion {
     }
   }
 
-  public static ArrayList<Integer> makeAllSums(int n) {
+  //public static ArrayList<Integer> makeAllSums(int n) {
 
-  }
+  //}
 
   public static void allSumsH(int n, int ans, ArrayList<Integer> list) {
     if (n == 0) {
       list.add(ans);
+    } else {
+      allSumsH(n - 1, ans + n, list);
+      allSumsH(n - 1, ans, list);
     }
   }
 
