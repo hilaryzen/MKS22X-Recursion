@@ -18,6 +18,21 @@ public class Recursion {
     }
   }
 
+  /*Recursively find the n'th fibbonaci number in linear time
+  *fib(0) = 1; fib(1) = 1; fib(5) = 5
+  *precondition: n is non-negative
+  */
+  public static int fib(int n){
+
+  }
+
+  //Fibbonaci helper
+  public static int fibH(int n, int first, int second) {
+    if (n = 0) {
+      return second;
+    }
+  }
+
   public static void main(String[] args) {
     System.out.println(sqrt(2, 0.00001));
     System.out.println(sqrt(10, 0.00001));
