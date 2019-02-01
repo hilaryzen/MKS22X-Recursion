@@ -37,6 +37,16 @@ public class Recursion {
     }
   }
 
+  public static ArrayList<Integer> makeAllSums(int n) {
+
+  }
+
+  public static void allSumsH(int n, int ans, ArrayList<Integer> list) {
+    if (n == 0) {
+      list.add(ans);
+    }
+  }
+
   public static void main(String[] args) {
     System.out.println("Testing square root: ");
     System.out.println("Square root of 2: " + sqrt(2, 0.00001));
