@@ -38,8 +38,11 @@ public class Recursion {
   }
 
   public static void main(String[] args) {
+    System.out.println("Testing square root: ");
     System.out.println(sqrt(2, 0.00001));
+    System.out.println(sqrt(2, 0.1));
     System.out.println(sqrt(10, 0.00001));
+    System.out.println(sqrt(10000, 0.00001));
   }
 
 }
