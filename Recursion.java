@@ -23,7 +23,7 @@ public class Recursion {
   *precondition: n is non-negative
   */
   public static int fib(int n){
-    return fibH(n, 0, 1);
+    return fibH(n, 1, 1);
   }
 
   //Fibbonaci helper
@@ -47,8 +47,10 @@ public class Recursion {
     System.out.println(" ");
 
     System.out.println("Testing fib: ");
-    System.out.println(fib(2));
-    System.out.println(fib(4));
+    System.out.println("Fib number 2: " + fib(2));
+    System.out.println("Fib number 4: " + fib(4));
+    System.out.println("Fib number 15: " + fib(15));
+    System.out.println("Fib number 46: " + fib(46));
   }
 
 }
