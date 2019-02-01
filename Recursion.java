@@ -68,6 +68,11 @@ public class Recursion {
     System.out.println("Fib number 4: " + fib(4));
     System.out.println("Fib number 15: " + fib(15));
     System.out.println("Fib number 46: " + fib(46));
+
+    System.out.println(" ");
+
+    System.out.println("Testing makeAllSums: ");
+    System.out.println(makeAllSums(3));
   }
 
 }
