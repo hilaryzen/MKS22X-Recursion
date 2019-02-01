@@ -39,10 +39,16 @@ public class Recursion {
 
   public static void main(String[] args) {
     System.out.println("Testing square root: ");
-    System.out.println(sqrt(2, 0.00001));
-    System.out.println(sqrt(2, 0.1));
-    System.out.println(sqrt(10, 0.00001));
-    System.out.println(sqrt(10000, 0.00001));
+    System.out.println("Square root of 2: " + sqrt(2, 0.00001));
+    System.out.println("Square root of 2 with less precision: " + sqrt(2, 0.1));
+    System.out.println("Square root of 10: " + sqrt(10, 0.00001));
+    System.out.println("Square root of 10000: " + sqrt(10000, 0.00001));
+
+    System.out.println(" ");
+
+    System.out.println("Testing fib: ");
+    System.out.println(fib(2));
+    System.out.println(fib(4));
   }
 
 }
