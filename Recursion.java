@@ -32,6 +32,8 @@ public class Recursion {
       return first;
     } else if (n == 2) {
       return second;
+    } else {
+      return fibH(n - 1, second, first + second);
     }
   }
 
