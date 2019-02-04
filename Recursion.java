@@ -25,26 +25,28 @@ public class Recursion {
   *precondition: n is non-negative
   */
   public static int fib(int n){
-    return fibH(n, 1, 1);
+    return fibH(n, 0, 1);
   }
 
   //Fibbonaci helper
   public static int fibH(int n, int first, int second) {
-    if (n == 1) {
+    if (n == 0) {
       return first;
-    } else if (n == 2) {
+    } else if (n == 1) {
       return second;
     } else {
       return fibH(n - 1, second, first + second);
     }
   }
 
+  //Returns all possible sums that can be made with numbers from 1 to n
   public static ArrayList<Integer> makeAllSums(int n) {
     ArrayList<Integer> sums = new ArrayList<Integer>();
     allSumsH(n, 0, sums);
     return sums;
   }
 
+  //Helper method for makeAllSums
   public static void allSumsH(int n, int ans, ArrayList<Integer> list) {
     if (n == 0) {
       list.add(ans);
@@ -64,15 +66,20 @@ public class Recursion {
     System.out.println(" ");
 
     System.out.println("Testing fib: ");
+    System.out.println("Fib number 0: " + fib(0));
+    System.out.println("Fib number 1: " + fib(1));
     System.out.println("Fib number 2: " + fib(2));
-    System.out.println("Fib number 4: " + fib(4));
+    System.out.println("Fib number 5: " + fib(5));
     System.out.println("Fib number 15: " + fib(15));
     System.out.println("Fib number 46: " + fib(46));
 
     System.out.println(" ");
 
     System.out.println("Testing makeAllSums: ");
+    System.out.println(makeAllSums(0));
+    System.out.println(makeAllSums(1));
     System.out.println(makeAllSums(3));
+    System.out.println(makeAllSums(4));
   }
 
 }
