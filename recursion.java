@@ -7,6 +7,9 @@ public class recursion {
   *@return the approximate sqrt of n within a tolerance of 0.001%
   */
   public static double sqrt(double n, double tolerance) {
+    if ((int)n == 0) {
+      return 0.0;
+    }
     return sqrtH(n, 1.0, tolerance);
   }
 
